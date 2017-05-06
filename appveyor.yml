@@ -1,0 +1,16 @@
+os: unstable
+version: 0.0.1-win-{build}
+branches:
+  only:
+    - master
+cache:
+  - node_modules
+environment:
+  nodejs_version: 6
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - set CI=true
+  - npm install
+build:
+  - npm run build
+test: off

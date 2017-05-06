@@ -11,6 +11,6 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - set CI=true
   - npm install
-build:
+build_script:
   - npm run build
 test: off

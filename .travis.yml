@@ -1,14 +1,18 @@
 sudo: required
 dist: trusty
 
+branches:
+  only:
+    - master
+
 language: c
 
 matrix:
   include:
     - os: osx
     - os: linux
-      env: CC=clang CXX=clang++ npm_config_clang=1
-      compiler: clang
+    - env: CC=clang CXX=clang++ npm_config_clang=1
+    - compiler: clang
 
 node_js:
   - 6
@@ -32,7 +36,6 @@ addons:
 
 install:
   - nvm install 6
-  - npm install electron-builder@next
   - npm install
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
@@ -43,4 +46,4 @@ before_script:
   - sleep 3
 
 script:
-  - npm run dist
+  - npm run build

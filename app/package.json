@@ -8,8 +8,10 @@
     "vue": "^2.1.10",
     "vue-electron": "^1.0.6",
     "moment": "^2.18.1",
-    "pouchdb": "^6.2.0",
-    "electron-updater": "^1.14.4"
+    "pouchdb-browser": "^6.2.0",
+    "electron-updater": "^1.14.4",
+    "underscore": "^1.8.3",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {},
   "author": "Alex Conner <gtd@secretinbox.net>"

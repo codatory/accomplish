@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Electron from 'vue-electron'
+import PouchDB from 'pouchdb-browser'
+import App from './App'
+
 require('bootstrap-webpack')
 var _ = require('underscore')
 var $ = require('jquery')
 
 const moment = require('moment')
 
-import PouchDB from 'pouchdb-browser'
 PouchDB.plugin(require('pouchdb-find'))
 PouchDB.plugin(require('pouchdb-live-find'))
 
@@ -16,8 +18,6 @@ Vue.use(require('vue-pouch'), {
   defaultDB: 'todos'
 })
 Vue.config.debug = true
-
-import App from './App'
 
 /* eslint-disable no-new */
 window.myapp = new Vue({

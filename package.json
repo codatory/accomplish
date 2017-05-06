@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Yet another GTD app",
   "scripts": {
-    "build": "npm run pack && build -p",
+    "build": "npm run pack && build -p onTagOrDraft",
     "build:dir": "npm run pack && build --dir",
     "dev": "node tasks/runner.js",
     "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter app",

@@ -1,9 +1,9 @@
 {
   "name": "accomplish",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yet another GTD app",
   "scripts": {
-    "build": "npm run pack && build -w",
+    "build": "npm run pack && build -w -p always",
     "build:dir": "npm run pack && build --dir",
     "dev": "node tasks/runner.js",
     "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter app",
@@ -100,7 +100,7 @@
   },
   "dependencies": {
     "moment": "^2.18.1",
-    "moment.distance": "^1.0.1",
-    "pouchdb": "^6.2.0"
+    "pouchdb": "^6.2.0",
+    "electron-updater": "^1.14.4"
   }
 }

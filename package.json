@@ -1,6 +1,6 @@
 {
   "name": "accomplish",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yet another GTD app",
   "scripts": {
     "build": "npm run pack && build -p onTagOrDraft",
@@ -16,7 +16,6 @@
   "build": {
     "productName": "Accomplish GTD",
     "appId": "com.codatory.accomplish-gtd",
-    "category": "public.app-category.tools",
     "dmg": {
       "contents": [
         {

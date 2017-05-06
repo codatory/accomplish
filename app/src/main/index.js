@@ -45,5 +45,6 @@ app.on('activate', () => {
 })
 
 autoUpdater.on('update-downloaded', function () {
-  mainWindow.insertCSS('#checkLogo { color: green }')
+  mainWindow.insertCSS('#checkLogo { color: red }')
+  setTimeout(autoUpdater.quitAndInstall, 30000)
 })

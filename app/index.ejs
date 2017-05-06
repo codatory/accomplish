@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Accomplish GTD</title>
+    <% if (htmlWebpackPlugin.options.appModules) { %>
+      <!-- Add `app/node_modules` to global paths so `require` works properly in development -->
+      <script>
+        require('module').globalPaths.push('<%= htmlWebpackPlugin.options.appModules.replace(/\\/g, '\\\\') %>')
+      </script>
+    <% } %>
+  </head>
+  <body>
+    <div class="container-fluid" id="app"></div>
+    <!-- webpack builds are automatically injected -->
+  </body>
+</html>

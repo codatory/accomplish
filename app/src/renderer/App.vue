@@ -111,7 +111,10 @@
                   </label>
                 </div>
               </div>
-
+              <div class="form-group">
+                <label>Notes</label>
+                <textarea class="form-control" rows="5" v-model="newTodo.notes"></textarea>
+              </div>
             </form>
           </div>
           <div class="modal-footer">

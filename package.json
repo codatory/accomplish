@@ -1,6 +1,6 @@
 {
   "name": "accomplish",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yet another GTD app",
   "scripts": {
     "build": "npm run pack && build -p onTagOrDraft",

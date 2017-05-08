@@ -1,5 +1,5 @@
 os: unstable
-version: 0.0.2-win-{build}
+version: 0.0.3
 branches:
   only:
     - master

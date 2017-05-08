@@ -225,4 +225,5 @@ window.myapp = new Vue({
 
 window.myapp.$mount('#app')
 window.setTimeout(window.myapp.recalculateProjects, 5000)
+window.setTimeout(window.myapp.recalculateScheduled, 5000)
 window.setInterval(window.myapp.recalculateScheduled, 300000)
